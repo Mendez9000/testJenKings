@@ -9,9 +9,15 @@ pipeline {
                 '''
             }
 	}
-	stage('test') {
-	   sh "./test_hello.sh"
+
+	stage('Test') {
+            steps {
+                sh '''
+                    ./test_hello.sh
+                '''
+            }
 	}
+
     }
     post {
         always {
