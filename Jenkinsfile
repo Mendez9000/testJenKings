@@ -8,6 +8,9 @@ pipeline {
 		    ./sergio > /tmp/funciona.txt
                 '''
             }
+	    stage('test') {
+	      sh "./test_hello.sh"
+	    }
         }
     }
     post {
