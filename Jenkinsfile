@@ -21,7 +21,7 @@ pipeline {
             echo 'Fallo'
         }
         unstable {
-            echo Raro'
+            echo 'Raro'
         }
         changed {
             echo 'Cambiado'
