@@ -11,4 +11,37 @@ pipeline {
             }
         }
     }
+    
+    
+    post {
+        always {
+            echo 'Siempre'
+        }
+        success {
+            echo 'Exito'
+        }
+        failure {
+            echo 'Fallo'
+        }
+        unstable {
+            echo Raro'
+        }
+        changed {
+            echo 'Cambiado'
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
